@@ -56,7 +56,7 @@ exports.handler = async (event) => {
     }
 
     const resendApiKey = process.env.RESEND_API_KEY;
-    const emailFrom = process.env.EMAIL_FROM || 'Maker Lab <no-reply@tasks-no-reply.isham.in>';
+    const emailFrom = process.env.EMAIL_FROM;
 
     if (!resendApiKey) {
       return {
