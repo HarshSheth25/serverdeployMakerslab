@@ -15,6 +15,10 @@ View your app in AI Studio: https://ai.studio/apps/d846c666-b9f1-4cc7-b7c8-fcfb6
 
 1. Install dependencies:
    `npm install`
-2. Set the `VITE_GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
+2. Copy `.env.example` to `.env.local` and set local values.
+3. Keep secret values out of git.
+   - Never commit `.env.local` or any `.env.*` file with real values.
+   - In Netlify, configure `RESEND_API_KEY` and `EMAIL_FROM` in Site settings → Environment variables.
+   - Do not hardcode API keys in source files.
+4. Run the app:
    `npm run dev`
